@@ -27,7 +27,7 @@ def upload_file():
         f = request.files.getlist('file')
         for file in f:
             file.save(
-                os.path.join(f'/home/skgezhil/Workspace/storage_server/storage/{flask_login.current_user}',
+                os.path.join(f'/home/skgezhil/Workspace/storage_server/storage/{flask_login.current_user}', #
                              file.filename))
             new_file = Files(user_id=f'{flask_login.current_user}', date=f'{date}', time=f'{time}',
                              file_name=f'{file.filename}')

@@ -1,2 +1,4 @@
 # Project exclude paths
 /storage_env/
+/storage/
+/storage_db.sqlite/
