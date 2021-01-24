@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <head>
+        <meta charset="UTF-8">
+        <title>Photos</title>
+        <title>Photos</title>
+        <link rel="stylesheet" href="../static/styles/layouts.css"/>
+
+    </head>
+    <body>
+    <h1 class="title">
+        Your Images
+    </h1>
+    <div class="rowlayout">
+
+        {% for file in files %}
+            <div class="gridlayout collumnlayout" style="padding-top:2em">
+                <div>
+                    <div>
+                        <a href="{{ (request.path + '/' if request.path != '/' else '') + file }}" type="submit">
+                            <img class="imagelist lazy"
+                                 src="{{ (request.path + '/' if request.path != '/' else '') + file }}" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+    </body>
+{% endblock %}

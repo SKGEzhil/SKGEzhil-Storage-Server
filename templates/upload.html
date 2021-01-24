@@ -1,0 +1,25 @@
+<!-- templates/upload.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 class="title">
+        Welcome, {{ name }}! You can Upload your photos here
+    </h1>
+    <form action="{{ url_for('main.upload_file') }}" method="POST"
+          enctype="multipart/form-data">
+        <label for="files" onclick="change()" id="upload_label"
+               class="button is-block is-info is-large is-fullwidth paddingtrue disp-none center-content">
+            <h1>Upload</h1>
+        </label>
+        <input type="file" onclick="change()" id="files" class="custom-file-input" name="file" multiple/>
+        <input type="submit" class="button is-block is-info is-large is-fullwidth paddingtrue"/>
+    </form>
+    <script>
+        function change()
+        {
+            var upload = document.getElementById("upload_label");
+            if (upload.innerHTML === "Upload") upload.innerHTML = "Click Submit";
+        }
+    </script>
+{% endblock %}

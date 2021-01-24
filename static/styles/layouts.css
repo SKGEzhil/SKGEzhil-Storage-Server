@@ -1,0 +1,108 @@
+a {
+    justify-content: center;
+}
+
+.float-left{
+    float: left;
+}
+
+.bg-red {
+    background-color: #ff5a5a;
+}
+
+.gridlayout {
+
+}
+
+.center-content {
+    justify-content: center;
+}
+
+.custom-file-input {
+    display: none;
+}
+
+.paddingtrue {
+    margin-top: 10px;
+}
+
+.imagelist {
+    border-radius: 8px;
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    background-color: #00b89c;
+}
+
+@media screen and (max-width: 768px) {
+    img {
+        width: 170px;
+        height: 170px;
+        object-fit: unset;
+    }
+
+    .mobnav {
+        justify-content: center;
+        background-color: #00d1b2;
+    }
+
+    .rowlayout {
+        display: -ms-flexbox; /* IE 10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE 10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+
+    /* Create two equal columns that sits next to each other */
+    .collumnlayout {
+        -ms-flex: 50%; /* IE 10 */
+        flex: 50%;
+        padding: 0 4px;
+    }
+
+
+}
+
+@media screen and (min-width: 768px) {
+    img {
+        width: 250px;
+        height: 250px;
+        object-fit: unset;
+    }
+
+    .mobnav {
+        display: none;
+
+    }
+
+    .rowlayout {
+        display: -ms-flexbox; /* IE 10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE 10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+
+    /* Create two equal columns that sits next to each other */
+    .collumnlayout {
+        -ms-flex: 20%; /* IE 10 */
+        flex: 20%;
+        padding: 0 4px;
+    }
+
+
+}
+
+.grid-container {
+
+}
